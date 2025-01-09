@@ -19,6 +19,7 @@ def main():
         screen.fill((0, 0, 0))
         player.draw(screen)
         dt = clock.tick(60) / 1000
+        player.update(dt)
         
         # must be last line of the loop !
         pygame.display.flip()
